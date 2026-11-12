@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew Haven Coffee - freshly roasted coffee, cozy atmosphere and handmade pastries. Order your perfect cup online." />
+  <title>Brew Haven Coffee | Your Perfect Coffee Moment</title>
+
+  <!-- Google Fonts: Playfair Display for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Brew Haven Coffee - back to top">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z" />
+            <path d="M16 9h2.5a2.5 2.5 0 0 1 0 6H16" />
+            <path d="M7 3v2M11 3v2" />
+          </svg>
+        </span>
+        <span class="logo-text">Brew <em>Haven</em></span>
+      </a>
+
+      <!-- Navigation links (becomes a dropdown on mobile) -->
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header buttons -->
+      <div class="header-actions">
+
+        <!-- Dark / Light mode -->
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+
+        <!-- Shopping cart -->
+        <button type="button" class="icon-btn cart-btn" id="cartToggle" aria-label="Open shopping cart">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2.5 3h2.2l2.3 11.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H6" />
+            <circle cx="9.5" cy="20" r="1.6" />
+            <circle cx="18" cy="20" r="1.6" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <!-- Mobile menu button -->
+        <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME / HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <span class="eyebrow">Freshly roasted every morning</span>
+          <h1>Your Perfect Coffee Moment</h1>
+          <p class="hero-desc">
+            At Brew Haven we slow-roast small batches of ethically sourced beans and brew
+            every cup by hand. Come for the coffee, stay for the calm.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+            <button type="button" class="btn btn-ghost" id="orderNowBtn">Order Now</button>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>12+</strong><span>Signature Blends</span></li>
+            <li><strong>4.9</strong><span>Customer Rating</span></li>
+            <li><strong>100%</strong><span>Arabica Beans</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Barista pouring steamed milk into a cup of espresso"
+            width="900" height="1125" />
+          <div class="hero-badge">
+            <span class="hero-badge-icon" aria-hidden="true">★</span>
+            <div>
+              <strong>Roasted Daily</strong>
+              <span>Ground to order</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+
+        <div class="about-media">
+          <img class="about-img"
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Warm and cozy interior of the Brew Haven coffee shop"
+            width="900" height="700"
+            loading="lazy" />
+          <img class="about-img-small"
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            alt="Three cups of coffee with latte art on a wooden table"
+            width="500" height="500"
+            loading="lazy" />
+          <div class="about-badge">
+            <strong>Since 2014</strong>
+            <span>Brewing in the neighbourhood</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">Our Story</span>
+          <h2>A Small Café With a Big Love for Coffee</h2>
+          <p>
+            Brew Haven started as a tiny corner counter with one espresso machine and a
+            simple promise: serve coffee that people look forward to waking up for.
+            Ten years later we roast our own beans, bake our own pastries and still greet
+            most guests by name.
+          </p>
+          <p>
+            Every cup is freshly brewed to order using quality ingredients — single-origin
+            beans, fresh milk and house-made syrups. No shortcuts, no stale pots, ever.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+              </span>
+              <span>Small-batch beans roasted in-house every week</span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+              </span>
+              <span>Pastries baked fresh before we open the doors</span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+              </span>
+              <span>Friendly baristas who remember your usual order</span>
+            </li>
+          </ul>
+
+          <a href="#menu" class="btn btn-primary">See What We Brew</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="eyebrow">Our Menu</span>
+          <h2>Crafted For Every Mood</h2>
+          <p>Filter by category or search for your favourite — then add it straight to your cart.</p>
+        </div>
+
+        <!-- Filters + search -->
+        <div class="menu-toolbar">
+          <div class="filters" id="filters" role="group" aria-label="Filter menu by category">
+            <button type="button" class="filter-btn is-active" data-category="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-category="hot" aria-pressed="false">Hot Coffee</button>
+            <button type="button" class="filter-btn" data-category="cold" aria-pressed="false">Cold Coffee</button>
+            <button type="button" class="filter-btn" data-category="dessert" aria-pressed="false">Desserts</button>
+          </div>
+
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <label class="visually-hidden" for="searchInput">Search menu by product name</label>
+            <input type="search" id="searchInput" placeholder="Search for a coffee..." autocomplete="off" />
+            <button type="button" class="search-clear" id="clearSearch" aria-label="Clear search" hidden>&times;</button>
+          </div>
+        </div>
+
+        <!-- Product cards are generated by script.js -->
+        <div class="product-grid" id="productGrid"></div>
+
+        <!-- Friendly message when nothing matches -->
+        <p class="no-results" id="noResults" hidden>
+          <span aria-hidden="true">☕</span>
+          <strong>No products found.</strong>
+          <span id="noResultsText">Try a different search or category.</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Come Say Hello</h2>
+          <p class="contact-intro">
+            Pop in for a cup, collect an online order, or just tell us how we did.
+            We are right in the heart of the neighbourhood.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" /><circle cx="12" cy="10" r="2.6" /></svg>
+              </span>
+              <div>
+                <strong>Address</strong>
+                <span>24 Maple Street, Riverside District</span>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3h2.7l1.4 4-2 1.4a12 12 0 0 0 5.9 5.9l1.4-2 4 1.4v2.7A2.6 2.6 0 0 1 17.4 19C10.5 18.6 5.4 13.5 5 6.6A2.6 2.6 0 0 1 6.6 3z" /></svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@brewhavencoffee.com">hello@brewhavencoffee.com</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hours-card">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5.2l3.2 2" /></svg>
+              Opening Hours
+            </h3>
+            <ul class="hours">
+              <li><span>Monday – Friday</span><span>7:00 AM – 8:00 PM</span></li>
+              <li><span>Saturday</span><span>8:00 AM – 9:00 PM</span></li>
+              <li><span>Sunday</span><span>9:00 AM – 6:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send Us a Message</h3>
+
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Silvana Rivers" autocomplete="name"
+                   aria-describedby="nameError" />
+            <p class="form-error" id="nameError" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
+                   aria-describedby="emailError" />
+            <p class="form-error" id="emailError" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="4" placeholder="I would like to ask about..."
+                      aria-describedby="messageError"></textarea>
+            <p class="form-error" id="messageError" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+          <!-- Success message shown after a valid submit -->
+          <p class="form-success" id="formSuccess" role="status" hidden></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z" />
+              <path d="M16 9h2.5a2.5 2.5 0 0 1 0 6H16" />
+            </svg>
+          </span>
+          <span class="logo-text">Brew <em>Haven</em></span>
+        </a>
+        <p>Small-batch coffee, fresh pastries and a warm corner to slow down in.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span><span>7 AM – 8 PM</span></li>
+          <li><span>Saturday</span><span>8 AM – 9 PM</span></li>
+          <li><span>Sunday</span><span>9 AM – 6 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+          <li><a href="mailto:hello@brewhavencoffee.com">hello@brewhavencoffee.com</a></li>
+          <li>24 Maple Street, Riverside</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Brew Haven Coffee. All rights reserved.</p>
+      <p>Made with care, one cup at a time.</p>
+    </div>
+  </footer>
+
+  <!-- ============ SHOPPING CART DRAWER ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart-head">
+      <h2 id="cartTitle">Your Cart</h2>
+      <button type="button" class="icon-btn" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <!-- Cart items are generated by script.js -->
+      <ul class="cart-list" id="cartList"></ul>
+
+      <!-- Empty cart message -->
+      <div class="cart-empty" id="cartEmpty">
+        <span class="cart-empty-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 3h2.2l2.3 11.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H6" />
+            <circle cx="9.5" cy="20" r="1.6" />
+            <circle cx="18" cy="20" r="1.6" />
+          </svg>
+        </span>
+        <p><strong>Your cart is empty</strong></p>
+        <p class="cart-empty-text">Add a coffee or a pastry from the menu to get started.</p>
+        <button type="button" class="btn btn-ghost" id="cartBrowseBtn">Browse the Menu</button>
+      </div>
+
+      <!-- Order confirmation message shown after checkout -->
+      <div class="cart-confirm" id="cartConfirm" hidden>
+        <span class="cart-confirm-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+        </span>
+        <h3>Order Confirmed!</h3>
+        <p>Thank you for your order. Your coffee will be ready in about 10 minutes.</p>
+        <p class="cart-confirm-details">
+          Order <strong id="orderNumber">#BH-000000</strong>
+          <span>Total paid <strong id="orderTotal">$0.00</strong></span>
+        </p>
+        <button type="button" class="btn btn-primary btn-block" id="cartDoneBtn">Continue Shopping</button>
+      </div>
+    </div>
+
+    <div class="cart-foot" id="cartFoot">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <p class="cart-note">Pickup orders only &middot; ready in about 10 minutes</p>
+      <button type="button" class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Small toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Back to top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+    </svg>
+  </button>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
